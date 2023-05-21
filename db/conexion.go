@@ -27,7 +27,7 @@ func ConectarDB() *mongo.Client {
 	return client
 }
 
-func haveConnection() bool {
+func HaveConnection() bool {
 	if err := MongoCN.Ping(context.TODO(), nil); err != nil {
 		return false
 	}
